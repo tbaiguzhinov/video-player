@@ -19,6 +19,8 @@
       .button-tab {
         background-color: black;
         flex-grow: 1;
+        display: flex;
+        flex-direction: row;
       }
       .player-buttons {
         border-style: none;
@@ -30,6 +32,10 @@
         padding: 5px;
         height: 40px;
         width: 40px;
+        flex-grow: 1;
+      }
+      .empty-space {
+        flex-grow: 50;
       }
     </style>
   </head>
@@ -49,7 +55,10 @@
       <button class="js-volume-button player-buttons">
         <i class="fa fa-volume-off" aria-hidden="true"></i>
       </button>
-
+      <div class="empty-space"></div>
+      <button class="js-fullscreen-button player-buttons">
+        <i class="fa fa-expand" aria-hidden="true"></i>
+      </button>
     </div>
   </div>
   
