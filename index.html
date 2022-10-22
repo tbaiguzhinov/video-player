@@ -17,25 +17,24 @@
 
       .screen {
         width: 100%;
-        height: 100%;
-        flex-grow: 10;
+        flex-grow: 1;
       }
 
       .bottom-controls {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        background-color: black;
       }
 
       .left-button-tab {
-        background-color: black;
-        flex-grow: 1;
+        background-color: transparent;
         display: flex;
         flex-direction: row;
       }
 
       .right-button-tab {
-        background-color: black;
-        flex-grow: 1;
+        background-color: transparent;
         display: flex;
         flex-direction: row;
       }
@@ -50,7 +49,6 @@
         padding: 10px;
         height: 48px;
         width: 28px;
-        flex-grow: 5;
       }
 
       .player-buttons:focus {
@@ -59,15 +57,15 @@
 
       .time-tab {
         background-color: black;
-        flex-grow: 98;
+        flex-grow: 1;
         display: flex;
         flex-direction: row;
         padding-left: 4px;
+        align-items: center;
       }
 
       .viewing-time {
         border-style: none;
-        padding-top: 5px;
         padding-left: 1px;
         color: white;
         font-family: Roboto Regular;
@@ -84,7 +82,6 @@
         flex-direction: row;
         align-items: center;
         margin-left: 12px;
-        margin-top: 6px;
       }
 
       .slider {
@@ -137,14 +134,14 @@
         </button>
       </div>
       <div class="time-tab">
-        <button class="js-current-time viewing-time">
-        </button>
+        <span class="js-current-time viewing-time">
+        </span>
         <div class="js-progress progressbar">
           <div class="js-progress-slider slider">...</div>
           <span class="circle"></span>
         </div>
-        <button class="js-duration viewing-time">
-        </button>
+        <span class="js-duration viewing-time">
+        </span>
       </div>
       <div class="right-button-tab">
         <button class="js-fullscreen-button player-buttons">
